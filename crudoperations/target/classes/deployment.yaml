@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+	name: crudoperations
+	namespace: example
+spec: 
+   selector:
+     matchLabels:
+    app: crudoperations
+  template:
+    metadata:
+    labels:
+      app: crudoperations
+  spec:
+    containers:
+    - name: crudoperations
+      image:
+      env:
+      - name:
+        value:
+    ports:
+    - containerPort:
